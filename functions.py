@@ -65,3 +65,14 @@ def createIncrementor(n):
 
 f = createIncrementor(10)
 print(f(5))
+
+
+def useDocstring():
+    """Does nothing, just another useless function
+
+    And this is the function's meaningless documentation
+    """
+    pass
+
+
+print(useDocstring.__doc__)
