@@ -58,3 +58,10 @@ def keywordArguments(x=100, y=100, z=100):
 
 keywordArguments(z=20)
 
+# Lambda expression example
+def createIncrementor(n):
+    return lambda x: x + n
+
+
+f = createIncrementor(10)
+print(f(5))
