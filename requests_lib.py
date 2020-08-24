@@ -18,7 +18,11 @@ import requests
 # r = requests.get(url, headers=headers)
 # print(r.request.headers)
 
-url = "https://httpbin.org/post"
-payload = {"some_key": "some_data"}
-r = requests.post(url, json=payload)
-print(r.request.body)
+# url = "https://httpbin.org/post"
+# payload = {"some_key": "some_data"}
+# r = requests.post(url, json=payload)
+# print(r.request.body)
+
+bad_r = requests.get("https://httpbin.org/status/404")
+print(bad_r.status_code)
+bad_r.raise_for_status()
