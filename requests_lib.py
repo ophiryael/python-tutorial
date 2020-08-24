@@ -23,6 +23,8 @@ import requests
 # r = requests.post(url, json=payload)
 # print(r.request.body)
 
-bad_r = requests.get("https://httpbin.org/status/404")
-print(bad_r.status_code)
-bad_r.raise_for_status()
+# bad_r = requests.get("https://httpbin.org/status/404")
+# print(bad_r.status_code)
+# bad_r.raise_for_status()
+
+requests.get("https://api.github.com/events", timeout=0.01)
