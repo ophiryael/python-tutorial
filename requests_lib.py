@@ -12,3 +12,7 @@ import requests
 # r = requests.get("https://httpbin.org/get", params=payload)
 # print(r.url)
 
+url = "https://httpbin.org/get"
+headers = {"user-agent": "my-app/0.0.1"}
+r = requests.get(url, headers=headers)
+print(r.request.headers)
